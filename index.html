@@ -1,132 +1,155 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Automato Tecnologias</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Marquesa - Planilhas</title>
 
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #b30000, #7a0000);
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    header img {
-      width: 150px;
-      margin-bottom: 10px;
-    }
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.35);
+            padding: 40px 30px;
+            border-radius: 12px;
+            max-width: 420px;
+            width: 90%;
+        }
 
-    main {
-      padding: 40px;
-    }
+        h1 {
+            margin-bottom: 15px;
+            font-size: 26px;
+        }
 
-    section {
-      padding: 40px;
-    }
+        p {
+            margin-bottom: 30px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
 
-    section#sobre {
-      background-color: #e6f0ff;
-    }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 15px;
+            background-color: #00c853;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
 
-    section#servicos {
-      background-color: #f2f2f2;
-    }
+        .btn:hover {
+            background-color: #00a844;
+        }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 18px;
-    }
+        .btn-hortfrut {
+            background-color: #ff9800;
+        }
 
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 10px;
-    }
+        .btn-hortfrut:hover {
+            background-color: #e68900;
+        }
 
-    footer a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 20px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo-automato.png" alt="Logotipo Automato Tecnologias">
-    <h1>Automato Tecnologias</h1>
-  </header>
+        .btn-carne {
+            background-color: #d32f2f;
+        }
 
-  <main>
-    <h2>Bem-vindo ao nosso site!</h2>
-    <p>Em breve, mais novidades sobre tecnologia, automação e inovação.</p>
-  </main>
+        .btn-carne:hover {
+            background-color: #b71c1c;
+        }
 
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p style="max-width: 700px; margin: auto; font-size: 18px; line-height: 1.6;">
-      A <strong>Automato Tecnologias</strong> é uma empresa voltada para soluções em tecnologia, automação e inovação digital.
-      Atendemos residências, pequenas empresas e profissionais que buscam modernizar seus ambientes com inteligência, segurança e conectividade.
-      Nossa missão é tornar a tecnologia acessível e prática no dia a dia das pessoas.
-    </p>
-  </section>
+        .btn-miudezas {
+            background-color: #6a1b9a;
+        }
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <ul>
-      <li>• Automação residencial e empresarial</li>
-      <li>• Suporte técnico e manutenção de computadores</li>
-      <li>• Instalação de redes e câmeras de segurança</li>
-      <li>• Consultoria em tecnologia e inovação</li>
-      <li>• Criação de sites e páginas institucionais</li>
-    </ul>
-  </section>
+        .btn-miudezas:hover {
+            background-color: #4a148c;
+        }
 
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p style="font-size: 18px;">Tem alguma dúvida ou precisa de um orçamento? Clique no botão abaixo e fale diretamente com a gente pelo WhatsApp.</p>
-    <a href="https://wa.me/5511945047842" target="_blank" style="display: inline-block; background-color: #25D366; color: white; padding: 12px 24px; text-decoration: none; font-size: 18px; border-radius: 8px; margin-top: 20px;">
-      Enviar mensagem no WhatsApp
-    </a>
-  </section>
+        footer {
+            margin-top: 30px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
 
-  <footer>
-    <p>&copy; 2025 Automato Tecnologias. Todos os direitos reservados.</p>
-    <div style="margin-top: 10px;">
-      <a href="https://instagram.com/automatotecnologias" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://facebook.com/automatotecnologias" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://youtube.com/@automatotecnologias" target="_blank"><i class="fab fa-youtube"></i></a>
-    </div>
-  </footer>
+        .dev {
+            margin-top: 15px;
+            font-size: 11px;
+            opacity: 0.6;
+        }
 
-  <a href="https://wa.me/5511945047842" target="_blank" style="
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 20px;
+        .dev a {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 6px 14px;
+    font-size: 11px;
+    color: #ffffff;
+    text-decoration: none;
     background-color: #25D366;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 26px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.dev a:hover {
+    background-color: #1ebe5d;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rede Marquesa</h1>
+        <p>Acesso rápido às planilhas de controle</p>
+
+        <a class="btn" 
+           href="https://docs.google.com/spreadsheets/d/1Lv870v0-02LEDRerRwRizcXTPU-7hC3t_ZiRGPEYk9A/edit?usp=drivesdk" 
+           target="_blank">
+            📊 Folhagem Rede Marquesa
+        </a>
+
+        <a class="btn btn-hortfrut" 
+           href="https://docs.google.com/spreadsheets/d/1iM-7YOlpw63EcOxjE-dzgVt5aAd0kScLRsVpTinA5X0/edit?usp=drivesdk" 
+           target="_blank">
+            🥬 Marquesa Hortfrut
+        </a>
+
+        <a class="btn btn-carne" 
+           href="https://docs.google.com/spreadsheets/d/1zn5bxScn86UEQdGnEZwB8hNAqooi_jA1ATexvyTJL20/edit?usp=drivesdk" 
+           target="_blank">
+            🥩 Quantidade de Carne – Lojas
+        </a>
+
+        <a class="btn btn-miudezas" 
+           href="https://docs.google.com/spreadsheets/d/1aGqmEc_VgQsqWQ80Pfu53aE3032ofi3nM-gjNA0fZvQ/edit?gid=920480890#gid=920480890" 
+           target="_blank">
+            🧺 Relação de Miudezas – Rede Marquesa
+        </a>
+
+        <footer>
+            Controle • Organização • Decisão com dados
+        </footer>
+
+        <div class="dev">
+            Desenvolvido por Marcos Lima Duarte<br>
+            <a href="https://wa.me/5511945047842" target="_blank">
+                WhatsApp: (11) 94504-7842
+            </a>
+        </div>
+    </div>
 </body>
 </html>
